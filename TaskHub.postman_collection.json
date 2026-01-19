@@ -45,7 +45,7 @@
 								"exec": [
 									"var data = pm.response.json();",
 									"if (data.token) {",
-									"    pm.environment.set(\"token\", data.token);",
+									"    pm.collectionVariables.set(\"token\", data.token);",
 									"}"
 								],
 								"type": "text/javascript"
