@@ -65,6 +65,14 @@ Task Hub is a full-stack task management application designed with a focus on ae
 
 Visit `http://localhost:5173` in your browser!
 
+## 🧪 Testing with Postman
+
+I've included a Postman collection file `TaskHub.postman_collection.json` in the root directory.
+
+1. **Import**: Open Postman and import the file.
+2. **Environment**: The collection includes a `baseUrl` variable set to `http://localhost:3000/api`.
+3. **Automated Auth**: When you run the **Login** request, the JWT token is automatically saved and used for all **Task** requests.
+
 ## 📸 Screenshots
 
 *(Add your screenshots here later!)*
