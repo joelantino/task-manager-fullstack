@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const Task = require('../models/Task');
+const auth = require('../middleware/auth');
+
+// Protect all task routes
+router.use(auth);
 
 // Get all tasks for logged in user
 router.get('/', async (req, res, next) => {
